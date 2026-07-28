@@ -13,7 +13,7 @@ function App() {
       <h2>{currentNode.text}</h2>
 
       {currentNode.options.map((option) => (
-        <button key={option.next}>
+        <button key={option.next} onClick={() => setCurrentNodeId(option.next)}>
           {option.text}
         </button>
       ))}
