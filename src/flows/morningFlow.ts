@@ -16,26 +16,15 @@ export const morningFlow: Record<string, FlowNode> = {
     ]
   },
 
-  commander: {
+  commander: {  
     id: "commander",
-    text: "حالت فرمانده فعال شد. اولین مأموریت چیست؟",
-    options: [
-      {
-        text: "شروع مطالعه",
-        next: "study"
-      }
-    ]
+    text: "حالت فرمانده فعال شد.",
+    options: []
   },
 
   rest: {
     id: "rest",
     text: "استراحت کوتاه ثبت شد.",
-    options: []
-  },
-
-  study: {
-    id: "study",
-    text: "مأموریت مطالعه شروع شد.",
     options: []
   }
 };

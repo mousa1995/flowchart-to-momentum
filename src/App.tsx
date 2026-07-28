@@ -1,26 +1,22 @@
 import { morningFlow } from "./flows/morningFlow";
+import { useState } from "react";
+
 
 function App() {
+  const [currentNodeId, setCurrentNodeId] = useState("start");
+  const currentNode = morningFlow[currentNodeId];
+
   return (
     <div>
       <h1>🇮🇷 عهد ایرانی</h1>
 
-      <h2>
-        {morningFlow.text}
-      </h2>
+      <h2>{currentNode.text}</h2>
 
-      <p>
-        نسخه صفر
-      </p>
-
-      {
-        morningFlow.options.map((option) => (
-          <button key={option.next}>
-            {option.text}
-          </button>
-        ))
-      }
-
+      {currentNode.options.map((option) => (
+        <button key={option.next}>
+          {option.text}
+        </button>
+      ))}
     </div>
   );
 }
