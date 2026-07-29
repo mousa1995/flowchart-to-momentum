@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { morningFlow } from "./flows/morningFlow";
+import  FlowRenderer  from "./components/FlowRenderer";
 
 
 function App() {
@@ -9,14 +10,7 @@ function App() {
   return (
     <div>
       <h1>🇮🇷 عهد ایرانی</h1>
-
-      <h2>{currentNode.text}</h2>
-
-      {currentNode.options.map((option) => (
-        <button key={option.next} onClick={() => setCurrentNodeId(option.next)}>
-          {option.text}
-        </button>
-      ))}
+      <FlowRenderer node={currentNode} onSelect={setCurrentNodeId} />
     </div>
   );
 }
