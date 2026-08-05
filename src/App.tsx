@@ -1,11 +1,11 @@
 import { useState } from "react";
-import { morningFlow } from "./flows/morningFlow";
+import { morningRoutineFlow } from "./flows/morningRoutineFlow.ts";
 import  FlowRenderer  from "./components/FlowRenderer";
 
 
 function App() {
   const [currentNodeId, setCurrentNodeId] = useState("start");
-  const currentNode = morningFlow[currentNodeId];
+  const currentNode = morningRoutineFlow[currentNodeId];
 
   return (
     <div>

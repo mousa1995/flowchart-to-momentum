@@ -12,6 +12,7 @@ function FlowRenderer({ node, onSelect }: FlowRendererProps) {
 
       {node.options.map((option) => (
         <button
+          className="firstCss"
           key={option.next}
           onClick={() => onSelect(option.next)}
         >
