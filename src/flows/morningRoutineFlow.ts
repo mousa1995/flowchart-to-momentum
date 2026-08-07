@@ -212,7 +212,7 @@ export const morningRoutineFlow: Record<string, FlowNode> = {
 
   checkBuyBreadTomatoesAndSMS :{
     id : "checkBuyBreadTomatoesAndSMS",
-    text : "چک کن که نون و گوجه خریدی و پیامک ها را چک کن ",
+    text : "یا برو خرید یا  چک کن که نون و گوجه خریدی و پیامک ها را چک کن ",
     options: [
       {
         text: "انجام شد",
@@ -245,7 +245,7 @@ export const morningRoutineFlow: Record<string, FlowNode> = {
 
   facialAndShower :{
     id : "facialAndShower",
-    text : "صورتت را بشور و دوش بگیر ",
+    text : "صورتت را بشور و دوش بگیر و در صورت لزوم اصلاح کن ",
     options: [
       {
         text: "انجام شد",
@@ -278,7 +278,7 @@ export const morningRoutineFlow: Record<string, FlowNode> = {
 
   washingTablecloth :{
     id : "washingTablecloth",
-    text : " رومیزی را بشور و پهن کن ",
+    text : " سفره یا رومیزی را بشور و پهن کن ",
     options: [
       {
         text: "انجام شد",
@@ -333,7 +333,7 @@ export const morningRoutineFlow: Record<string, FlowNode> = {
 
   puttingRazorInItsPlace :{
     id : "puttingRazorInItsPlace",
-    text : "تیغ را سر جای خودش بزار ",
+    text : "تیغ و ماشین اصلاح را سر جای خودش بزار ",
     options: [
       {
         text: "انجام شد",
@@ -366,7 +366,18 @@ export const morningRoutineFlow: Record<string, FlowNode> = {
 
   handkerchiefToTheOpen :{
     id : "handkerchiefToTheOpen",
-    text : "دستمال جیبی را جایی بزار تا خشک شود ",
+    text : "اول اوپن را دستمال بکش و بعددستمال را بشور ودستمال را جایی بزار تا خشک شود ",
+    options: [
+      {
+        text: "انجام شد",
+        next : "eatingCreatineMonohydrate"
+      }
+    ]
+  },
+
+  eatingCreatineMonohydrate :{
+    id : "eatingCreatineMonohydrate",
+    text : "کراتین مونوهیدرات را بخور ",
     options: [
       {
         text: "انجام شد",
