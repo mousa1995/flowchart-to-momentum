@@ -5,7 +5,7 @@ function App() {
   return (
     <div>
       <h1>🇮🇷 عهد ایرانی</h1>
-      {<FlowManager />}
+      <FlowManager />
     </div>
   );
 }
