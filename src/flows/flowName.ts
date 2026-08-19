@@ -1,3 +1,4 @@
 export type FlowName =
   | "morningRoutine"
-  | "nightRoutine";
+  | "nightRoutine"
+  | "emergency";
