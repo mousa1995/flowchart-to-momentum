@@ -1,10 +1,10 @@
+import DailyGoal from "./components/DailyGoal";
 import FlowManager from "./components/FlowManager";
 
 function App() {
-
   return (
     <div>
-      <h1>🇮🇷 عهد ایرانی</h1>
+      <DailyGoal />
       <FlowManager />
     </div>
   );

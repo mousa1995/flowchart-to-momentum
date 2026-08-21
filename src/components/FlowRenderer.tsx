@@ -11,10 +11,7 @@ function FlowRenderer({ node, onSelect }: FlowRendererProps) {
       <h2>{node.text}</h2>
 
       {node.options.map((option) => (
-        <button
-          key={option.next}
-          onClick={() => onSelect(option.next)}
-        >
+        <button key={option.next} onClick={() => onSelect(option.next)}>
           {option.text}
         </button>
       ))}
