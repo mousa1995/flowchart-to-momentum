@@ -25,3 +25,7 @@ Tracks nested flow execution.
 ### History
 
 Stores past events.
+
+### Event Store
+
+A place to store system events.
