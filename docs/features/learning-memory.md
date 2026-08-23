@@ -21,3 +21,7 @@ Help transform learned concepts into long-term memory.
 - Track review count
 - Remove mastered concepts
 - Integrate with Event System
+
+## Future
+
+- Use FSRS Library for spaced repetition scheduling
