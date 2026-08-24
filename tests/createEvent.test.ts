@@ -1,17 +1,22 @@
+import { describe, expect, it } from "vitest";
 import { createEvent } from "../src/utils/createEvent";
 
-//       ↓
-// Event معتبر می‌سازد
-//       ↓
-// eventId دارد
-//       ↓
-// timestamp دارد
+describe("createEvent", () => {
+  it("should create a valid event", () => {
+    const event = createEvent(
+      "commander_entered",
+      "morningRoutine",
+      "task_001",
+    );
 
-// ### TEST ###
-const createdEvent = createEvent("commander_entered", "morningRoutine", "1");
+    expect(event.eventId).toBeDefined();
 
-console.log(createdEvent);
+    expect(event.timestamp).toBeDefined();
 
-console.log(createdEvent.eventId);
-console.log(createdEvent.timestamp);
-console.log(createdEvent.type);
+    expect(event.type).toBe("commander_entered");
+
+    expect(event.flow).toBe("morningRoutine");
+
+    expect(event.taskId).toBe("task_001");
+  });
+});
