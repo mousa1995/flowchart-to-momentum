@@ -1,4 +1,3 @@
-
 export interface FlowOption {
   text: string;
   next: string;

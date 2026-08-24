@@ -1,4 +1,1 @@
-export type FlowName =
-  | "morningRoutine"
-  | "nightRoutine"
-  | "emergency";
+export type FlowName = "morningRoutine" | "nightRoutine" | "emergency";

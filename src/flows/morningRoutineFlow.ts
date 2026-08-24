@@ -7,9 +7,9 @@ export const morningRoutineFlow: Record<string, FlowNode> = {
     options: [
       {
         text: "انجام شد",
-        next: "lightAdjustment"
-      }
-    ]
+        next: "lightAdjustment",
+      },
+    ],
   },
 
   lightAdjustment: {
@@ -18,9 +18,9 @@ export const morningRoutineFlow: Record<string, FlowNode> = {
     options: [
       {
         text: "انجام شد",
-        next: "tidyComputerDesk"
-      }
-    ]
+        next: "tidyComputerDesk",
+      },
+    ],
   },
 
   tidyComputerDesk: {
@@ -29,9 +29,9 @@ export const morningRoutineFlow: Record<string, FlowNode> = {
     options: [
       {
         text: "انجام شد",
-        next: "wipeDustOffComputerDesk"
-      }
-    ]
+        next: "wipeDustOffComputerDesk",
+      },
+    ],
   },
 
   wipeDustOffComputerDesk: {
@@ -40,9 +40,9 @@ export const morningRoutineFlow: Record<string, FlowNode> = {
     options: [
       {
         text: "انجام شد",
-        next: "goBoilWater"
-      }
-    ]
+        next: "goBoilWater",
+      },
+    ],
   },
 
   goBoilWater: {
@@ -51,344 +51,344 @@ export const morningRoutineFlow: Record<string, FlowNode> = {
     options: [
       {
         text: "انجام شد",
-        next :"makeTheBed"
-      }
-    ]
+        next: "makeTheBed",
+      },
+    ],
   },
 
-  makeTheBed :{
-    id : "makeTheBed",
-    text : "رختخواب را جمع کن ",
+  makeTheBed: {
+    id: "makeTheBed",
+    text: "رختخواب را جمع کن ",
     options: [
       {
         text: "انجام شد",
-        next : "goToTheBathroom"
-      }
-    ]
+        next: "goToTheBathroom",
+      },
+    ],
   },
 
-  goToTheBathroom :{
-    id : "goToTheBathroom",
-    text : "سرویس بهداشتی برو ",
+  goToTheBathroom: {
+    id: "goToTheBathroom",
+    text: "سرویس بهداشتی برو ",
     options: [
       {
         text: "انجام شد",
-        next : "watchTheBoilingWater"
-      }
-    ]
+        next: "watchTheBoilingWater",
+      },
+    ],
   },
 
-  watchTheBoilingWater :{
-    id : "watchTheBoilingWater",
-    text : "یه  وضو بگیر و آب جوش را نگاه کن ",
+  watchTheBoilingWater: {
+    id: "watchTheBoilingWater",
+    text: "یه  وضو بگیر و آب جوش را نگاه کن ",
     options: [
       {
         text: "انجام شد",
-        next : "bringTheVacuumCleaner"
-      }
-    ]
+        next: "bringTheVacuumCleaner",
+      },
+    ],
   },
 
-  bringTheVacuumCleaner :{
-    id : "bringTheVacuumCleaner",
-    text : "جارو برقی را بیار ",
+  bringTheVacuumCleaner: {
+    id: "bringTheVacuumCleaner",
+    text: "جارو برقی را بیار ",
     options: [
       {
         text: "انجام شد",
-        next : "sortingDirtyClothes"
-      }
-    ]
+        next: "sortingDirtyClothes",
+      },
+    ],
   },
 
-  sortingDirtyClothes :{
-    id : "sortingDirtyClothes",
-    text : "لباس های کثیف را مرتب کنار هم بگزار ",
+  sortingDirtyClothes: {
+    id: "sortingDirtyClothes",
+    text: "لباس های کثیف را مرتب کنار هم بگزار ",
     options: [
       {
         text: "انجام شد",
-        next : "makeHerbalTea"
-      }
-    ]
+        next: "makeHerbalTea",
+      },
+    ],
   },
 
-  makeHerbalTea :{
-    id : "makeHerbalTea",
-    text : "دمنوش برای خودت درست کن ",
+  makeHerbalTea: {
+    id: "makeHerbalTea",
+    text: "دمنوش برای خودت درست کن ",
     options: [
       {
         text: "انجام شد",
-        next : "doTheVacuum"
-      }
-    ]
+        next: "doTheVacuum",
+      },
+    ],
   },
 
-  doTheVacuum :{
-    id : "doTheVacuum",
-    text : "جارو برقی را روی زمین بکش ",
+  doTheVacuum: {
+    id: "doTheVacuum",
+    text: "جارو برقی را روی زمین بکش ",
     options: [
       {
         text: "انجام شد",
-        next : "drinkYourDrink"
-      }
-    ]
-  },
-  
-  drinkYourDrink :{
-    id : "drinkYourDrink",
-    text : "نوشیدنی خود را بنوش ",
-    options: [
-      {
-        text: "انجام شد",
-        next : "takeOutTheTrash"
-      }
-    ]
+        next: "drinkYourDrink",
+      },
+    ],
   },
 
-  takeOutTheTrash :{
-    id : "takeOutTheTrash",
-    text : "زباله را بیرون ببر ",
+  drinkYourDrink: {
+    id: "drinkYourDrink",
+    text: "نوشیدنی خود را بنوش ",
     options: [
       {
         text: "انجام شد",
-        next : "eraseTheWhiteboard"
-      }
-    ]
+        next: "takeOutTheTrash",
+      },
+    ],
   },
 
-  eraseTheWhiteboard :{
-    id : "eraseTheWhiteboard",
-    text : "تخته وایت برد را پاک کن ",
+  takeOutTheTrash: {
+    id: "takeOutTheTrash",
+    text: "زباله را بیرون ببر ",
     options: [
       {
         text: "انجام شد",
-        next : "bringTheRadio"
-      }
-    ]
+        next: "eraseTheWhiteboard",
+      },
+    ],
   },
 
-  bringTheRadio :{
-    id : "bringTheRadio",
-    text : "رادیو را بیار ",
+  eraseTheWhiteboard: {
+    id: "eraseTheWhiteboard",
+    text: "تخته وایت برد را پاک کن ",
     options: [
       {
         text: "انجام شد",
-        next : "washingDishesInTheSink"
-      }
-    ]
+        next: "bringTheRadio",
+      },
+    ],
   },
 
-  washingDishesInTheSink :{
-    id : "washingDishesInTheSink",
-    text : "ظرف ها را در سینک بشور ",
+  bringTheRadio: {
+    id: "bringTheRadio",
+    text: "رادیو را بیار ",
     options: [
       {
         text: "انجام شد",
-        next : "arrangeSofasInLivingRoom"
-      }
-    ]
+        next: "washingDishesInTheSink",
+      },
+    ],
   },
 
-  arrangeSofasInLivingRoom :{
-    id : "arrangeSofasInLivingRoom",
-    text : "مبل ها را در اتاق نشیمن مرتب کن ",
+  washingDishesInTheSink: {
+    id: "washingDishesInTheSink",
+    text: "ظرف ها را در سینک بشور ",
     options: [
       {
         text: "انجام شد",
-        next : "wipingTablesInsideHall"
-      }
-    ]
+        next: "arrangeSofasInLivingRoom",
+      },
+    ],
   },
 
-  wipingTablesInsideHall :{
-    id : "wipingTablesInsideHall",
-    text : "میز های داخل سالن را دستمال بکش ",
+  arrangeSofasInLivingRoom: {
+    id: "arrangeSofasInLivingRoom",
+    text: "مبل ها را در اتاق نشیمن مرتب کن ",
     options: [
       {
         text: "انجام شد",
-        next : "checkBuyBreadTomatoesAndSMS"
-      }
-    ]
+        next: "wipingTablesInsideHall",
+      },
+    ],
   },
 
-  checkBuyBreadTomatoesAndSMS :{
-    id : "checkBuyBreadTomatoesAndSMS",
-    text : "یا برو خرید یا  چک کن که نون و گوجه خریدی و پیامک ها را چک کن ",
+  wipingTablesInsideHall: {
+    id: "wipingTablesInsideHall",
+    text: "میز های داخل سالن را دستمال بکش ",
     options: [
       {
         text: "انجام شد",
-        next : "officeItemsForTomorrow"
-      }
-    ]
+        next: "checkBuyBreadTomatoesAndSMS",
+      },
+    ],
   },
 
-  officeItemsForTomorrow :{
-    id : "officeItemsForTomorrow",
-    text : "چک کن که فردا چه چیز هایی برای اداره لازم داری ",
+  checkBuyBreadTomatoesAndSMS: {
+    id: "checkBuyBreadTomatoesAndSMS",
+    text: "یا برو خرید یا  چک کن که نون و گوجه خریدی و پیامک ها را چک کن ",
     options: [
       {
         text: "انجام شد",
-        next : "washingSocksForTomorrow"
-      }
-    ]
+        next: "officeItemsForTomorrow",
+      },
+    ],
   },
 
-  washingSocksForTomorrow :{
-    id : "washingSocksForTomorrow",
-    text : "جوراب های فردا را بشور ",
+  officeItemsForTomorrow: {
+    id: "officeItemsForTomorrow",
+    text: "چک کن که فردا چه چیز هایی برای اداره لازم داری ",
     options: [
       {
         text: "انجام شد",
-        next : "facialAndShower"
-      }
-    ]
+        next: "washingSocksForTomorrow",
+      },
+    ],
   },
 
-  facialAndShower :{
-    id : "facialAndShower",
-    text : "صورتت را بشور و دوش بگیر و در صورت لزوم اصلاح کن ",
+  washingSocksForTomorrow: {
+    id: "washingSocksForTomorrow",
+    text: "جوراب های فردا را بشور ",
     options: [
       {
         text: "انجام شد",
-        next : "makingAndEatingFood"
-      }
-    ]
+        next: "facialAndShower",
+      },
+    ],
   },
 
-  makingAndEatingFood :{
-    id : "makingAndEatingFood",
-    text : "غذا درست کن و بخور ",
+  facialAndShower: {
+    id: "facialAndShower",
+    text: "صورتت را بشور و دوش بگیر و در صورت لزوم اصلاح کن ",
     options: [
       {
         text: "انجام شد",
-        next : "washingNewDishes"
-      }
-    ]
+        next: "makingAndEatingFood",
+      },
+    ],
   },
 
-  washingNewDishes :{
-    id : "washingNewDishes",
-    text : "ظرف های جدید را بشور ",
+  makingAndEatingFood: {
+    id: "makingAndEatingFood",
+    text: "غذا درست کن و بخور ",
     options: [
       {
         text: "انجام شد",
-        next : "washingTablecloth"
-      }
-    ]
+        next: "washingNewDishes",
+      },
+    ],
   },
 
-  washingTablecloth :{
-    id : "washingTablecloth",
-    text : " سفره یا رومیزی را بشور و پهن کن ",
+  washingNewDishes: {
+    id: "washingNewDishes",
+    text: "ظرف های جدید را بشور ",
     options: [
       {
         text: "انجام شد",
-        next : "takingSupplementsToday"
-      }
-    ]
+        next: "washingTablecloth",
+      },
+    ],
   },
 
-  takingSupplementsToday :{
-    id : "takingSupplementsToday",
-    text : "مکمل های امروز را بخور ",
+  washingTablecloth: {
+    id: "washingTablecloth",
+    text: " سفره یا رومیزی را بشور و پهن کن ",
     options: [
       {
         text: "انجام شد",
-        next : "eatTwoSpoonsOfOats"
-      }
-    ]
+        next: "takingSupplementsToday",
+      },
+    ],
   },
 
-  eatTwoSpoonsOfOats :{
-    id : "eatTwoSpoonsOfOats",
-    text : "دو قاشق جو دوسر بخور ",
+  takingSupplementsToday: {
+    id: "takingSupplementsToday",
+    text: "مکمل های امروز را بخور ",
     options: [
       {
         text: "انجام شد",
-        next : "cleaningOneKitchenAppliance"
-      }
-    ]
+        next: "eatTwoSpoonsOfOats",
+      },
+    ],
   },
 
-  cleaningOneKitchenAppliance :{
-    id : "cleaningOneKitchenAppliance",
-    text : "یکی از وسایل آشپزخانه را تمیز کن ",
+  eatTwoSpoonsOfOats: {
+    id: "eatTwoSpoonsOfOats",
+    text: "دو قاشق جو دوسر بخور ",
     options: [
       {
         text: "انجام شد",
-        next : "puttingDriedDishesInTheirPlace"
-      }
-    ]
+        next: "cleaningOneKitchenAppliance",
+      },
+    ],
   },
 
-  puttingDriedDishesInTheirPlace :{
-    id : "puttingDriedDishesInTheirPlace",
-    text : "ظرف های خشک شده را سر جای خودشون بزار ",
+  cleaningOneKitchenAppliance: {
+    id: "cleaningOneKitchenAppliance",
+    text: "یکی از وسایل آشپزخانه را تمیز کن ",
     options: [
       {
         text: "انجام شد",
-        next : "puttingRazorInItsPlace"
-      }
-    ]
+        next: "puttingDriedDishesInTheirPlace",
+      },
+    ],
   },
 
-  puttingRazorInItsPlace :{
-    id : "puttingRazorInItsPlace",
-    text : "تیغ و ماشین اصلاح را سر جای خودش بزار ",
+  puttingDriedDishesInTheirPlace: {
+    id: "puttingDriedDishesInTheirPlace",
+    text: "ظرف های خشک شده را سر جای خودشون بزار ",
     options: [
       {
         text: "انجام شد",
-        next : "sortingCleanClothes"
-      }
-    ]
+        next: "puttingRazorInItsPlace",
+      },
+    ],
   },
 
-  sortingCleanClothes :{
-    id : "sortingCleanClothes",
-    text : "لباس های تمیز را مرتب کن ",
+  puttingRazorInItsPlace: {
+    id: "puttingRazorInItsPlace",
+    text: "تیغ و ماشین اصلاح را سر جای خودش بزار ",
     options: [
       {
         text: "انجام شد",
-        next : "putTowelSomewhereToDry"
-      }
-    ]
+        next: "sortingCleanClothes",
+      },
+    ],
   },
 
-  putTowelSomewhereToDry :{
-    id : "putTowelSomewhereToDry",
-    text : "حوله را جایی بزار تا خشک شود ",
+  sortingCleanClothes: {
+    id: "sortingCleanClothes",
+    text: "لباس های تمیز را مرتب کن ",
     options: [
       {
         text: "انجام شد",
-        next : "handkerchiefToTheOpen"
-      }
-    ]
+        next: "putTowelSomewhereToDry",
+      },
+    ],
   },
 
-  handkerchiefToTheOpen :{
-    id : "handkerchiefToTheOpen",
-    text : "اول اوپن را دستمال بکش و بعددستمال را بشور ودستمال را جایی بزار تا خشک شود ",
+  putTowelSomewhereToDry: {
+    id: "putTowelSomewhereToDry",
+    text: "حوله را جایی بزار تا خشک شود ",
     options: [
       {
         text: "انجام شد",
-        next : "eatingCreatineMonohydrate"
-      }
-    ]
+        next: "handkerchiefToTheOpen",
+      },
+    ],
   },
 
-  eatingCreatineMonohydrate :{
-    id : "eatingCreatineMonohydrate",
-    text : "کراتین مونوهیدرات را بخور ",
+  handkerchiefToTheOpen: {
+    id: "handkerchiefToTheOpen",
+    text: "اول اوپن را دستمال بکش و بعددستمال را بشور ودستمال را جایی بزار تا خشک شود ",
     options: [
       {
         text: "انجام شد",
-        next : "end"
-      }
-    ]
+        next: "eatingCreatineMonohydrate",
+      },
+    ],
+  },
+
+  eatingCreatineMonohydrate: {
+    id: "eatingCreatineMonohydrate",
+    text: "کراتین مونوهیدرات را بخور ",
+    options: [
+      {
+        text: "انجام شد",
+        next: "end",
+      },
+    ],
   },
 
   end: {
     id: "end",
     text: "تبریک میگم، روتین صبحگاهی امروزت را کامل انجام دادی ",
-    options: []
-  }
+    options: [],
+  },
 };

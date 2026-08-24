@@ -2,8 +2,8 @@
 // ├── name: string
 // └── age: number
 interface Person {
-    name: string;
-    age: number;
+  name: string;
+  age: number;
 }
 
 // Employee extends Person
@@ -11,16 +11,16 @@ interface Person {
 // └── department: string
 
 interface Employee extends Person {
-    employeeId : string;
-    department: string;
+  employeeId: string;
+  department: string;
 }
 
-const employeeInstance : Employee = {
-    name: 'jhon',
-    age: 18,
-    employeeId: 'emp_0001',
-    department: 'JhonDoe club'
-}
+const employeeInstance: Employee = {
+  name: "jhon",
+  age: 18,
+  employeeId: "emp_0001",
+  department: "JhonDoe club",
+};
 
 console.log(employeeInstance);
 

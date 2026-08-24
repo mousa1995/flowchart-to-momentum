@@ -3,8 +3,8 @@
 // ├── id: string
 // └── username: string
 interface User {
-    id: string;
-    username: string;
+  id: string;
+  username: string;
 }
 
 // Extended interface:
@@ -13,16 +13,16 @@ interface User {
 // ├── role: "admin"
 // └── permissions: string[]
 interface Admin extends User {
-    role: "admin";
-    permissions: string[];
+  role: "admin";
+  permissions: string[];
 }
 
-const admin : Admin = {
-    id : '1',
-    username : 'thisFileAdmin',
-    role: 'admin',
-    permissions: []
-}
+const admin: Admin = {
+  id: "1",
+  username: "thisFileAdmin",
+  role: "admin",
+  permissions: [],
+};
 
 console.log(admin);
 

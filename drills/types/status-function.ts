@@ -4,19 +4,17 @@
 // - "loading"
 // - "success"
 // - "error"
-import { Status } from './status';
-
+import { Status } from "./status";
 
 // Create a function named printStatus.
 // It receives a Status.
 // Print the status.
 const printStatus = (status: Status) => {
-    console.log(status);
-}
+  console.log(status);
+};
 
-
- // Call the function with a valid Status.
-printStatus('success');
+// Call the function with a valid Status.
+printStatus("success");
 
 // Test:
 // npx tsx drills/types/status-function.ts
@@ -31,5 +29,5 @@ printStatus('success');
 // ### Test2 ###
 //printStatus("running");
 
-// why is works => 
+// why is works =>
 //TypeScript جلوی بعضی اشتباه‌ها را هنگام توسعه می‌گیرد؛ اما Typeها خودشان در Runtime نگهبان برنامه نیستند.

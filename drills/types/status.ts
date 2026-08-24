@@ -5,11 +5,10 @@
 // - "success"
 // - "error"
 
-
 export type Status = "idle" | "loading" | "success" | "error";
 
 // Create a variable using the Status type.
-const currentStatus : Status = "loading";
+const currentStatus: Status = "loading";
 
 // Test the variable.
 console.log(currentStatus);

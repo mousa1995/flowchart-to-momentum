@@ -1,5 +1,5 @@
 import type { FlowName } from "../flows/flowName";
-import type {EventType} from "./EventType";
+import type { EventType } from "./EventType";
 
 export interface Event {
   eventId: string;

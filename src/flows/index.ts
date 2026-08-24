@@ -5,5 +5,5 @@ import { emergencyFlow } from "./emergencyFlow.ts";
 export const flows = {
   morningRoutine: morningRoutineFlow,
   nightRoutine: nightRoutineFlow,
-  emergency: emergencyFlow
+  emergency: emergencyFlow,
 };

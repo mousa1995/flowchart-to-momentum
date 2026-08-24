@@ -7,4 +7,3 @@
 // type Status = "idle" | "loading" | "success" | "error";
 
 // این را نمی‌توانی به همان شکل با interface تعریف کنی.
-

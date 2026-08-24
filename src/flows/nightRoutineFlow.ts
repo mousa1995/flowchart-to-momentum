@@ -1,16 +1,15 @@
 import type { FlowNode } from "../types/FlowNode";
 
 export const nightRoutineFlow: Record<string, FlowNode> = {
-
   start: {
     id: "start",
     text: "شروع بررسی شبانه",
     options: [
       {
         text: "شروع بررسی شبانه",
-        next: "howToEnter"
+        next: "howToEnter",
       },
-    ]
+    ],
   },
 
   howToEnter: {
@@ -19,13 +18,13 @@ export const nightRoutineFlow: Record<string, FlowNode> = {
     options: [
       {
         text: "ورود با زنگ تلفن همراه بود",
-        next: "assigningUnfinishedTasks"
+        next: "assigningUnfinishedTasks",
       },
       {
         text: "ورود با تمام شدن کار های روز بود",
-        next: "reviewOfDiscoveries"
-      }
-    ]
+        next: "reviewOfDiscoveries",
+      },
+    ],
   },
 
   assigningUnfinishedTasks: {
@@ -34,9 +33,9 @@ export const nightRoutineFlow: Record<string, FlowNode> = {
     options: [
       {
         text: "انجام شد",
-        next: "assigningUnfinishedTasks"
-      }
-    ]
+        next: "assigningUnfinishedTasks",
+      },
+    ],
   },
 
   reviewOfDiscoveries: {
@@ -45,10 +44,8 @@ export const nightRoutineFlow: Record<string, FlowNode> = {
     options: [
       {
         text: "انجام شد",
-        next: "reviewOfDiscoveries"
-      }
-    ]
-  }
-}
-
-    
+        next: "reviewOfDiscoveries",
+      },
+    ],
+  },
+};
