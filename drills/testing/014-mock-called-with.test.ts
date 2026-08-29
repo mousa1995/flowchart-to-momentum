@@ -1,4 +1,4 @@
-import {describe, it, expect, vi} from 'vitest';
+import { describe, it, expect, vi } from "vitest";
 
 class OrderService {
   constructor(private paymentGateway: any) {}
@@ -8,23 +8,22 @@ class OrderService {
   }
 }
 
-describe("OrderService", () =>{
-  it("should mock paymentGateway" , ( ) => {
-    //Arrange 
+describe("OrderService", () => {
+  it("should mock paymentGateway", () => {
+    //Arrange
 
     const mockGateway = {
-      pay: vi.fn()
-    }
+      pay: vi.fn(),
+    };
 
     const orderService = new OrderService(mockGateway);
 
     //Act
 
-    const order = orderService.checkout(500)
+    const order = orderService.checkout(500);
 
     //Assert
 
     expect(mockGateway.pay).toHaveBeenCalledWith(500);
-
-  })
-})
+  });
+});
