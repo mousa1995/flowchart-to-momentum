@@ -1,14 +1,34 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { flows } from "../flows";
 import FlowRenderer from "./FlowRenderer";
 import FlowControls from "./FlowControls";
 import type { FlowName } from "../flows/flowName";
 import type { FlowPosition } from "../types/FlowPosition";
+import { EventStore } from "../services/EventStore";
+import { EventService } from "../services/EventService";
+import { createEvent } from "../utils/createEvent";
+import { taskIDGenerator } from "../utils/taskIDGenerator";
 
 function FlowManager() {
   const [activeFlow, setActiveFlow] = useState<FlowName>("morningRoutine");
   const [currentNodeId, setCurrentNodeId] = useState("start");
   const [positions, setPositions] = useState<FlowPosition[]>([]);
+  const eventStore = useRef(new EventStore());
+  const eventService = useRef(new EventService(eventStore.current)).current;
+  const isFirstRender = useRef(true);
+  useEffect(() => {
+    if (isFirstRender.current) {
+      isFirstRender.current = false;
+      return;
+    }
+    eventService.recordEvent(
+      createEvent(
+        "task_started",
+        activeFlow,
+        taskIDGenerator(activeFlow, currentNodeId),
+      ),
+    );
+  }, [currentNodeId, activeFlow]);
 
   const currentFlow = flows[activeFlow];
   const currentNode = currentFlow[currentNodeId];
@@ -55,9 +75,23 @@ function FlowManager() {
     setCurrentNodeId(lastNodeId);
   };
 
+  const onSelectHandler = (e: string) => {
+    eventService.recordEvent(
+      createEvent(
+        "task_completed",
+        activeFlow,
+        taskIDGenerator(activeFlow, currentNodeId),
+      ),
+    );
+
+    localStorage.setItem("history", JSON.stringify(eventStore.current.read()));
+    setCurrentNodeId(e);
+    console.log(eventStore.current.read());
+  };
+
   return (
     <div>
-      <FlowRenderer node={currentNode} onSelect={setCurrentNodeId} />
+      <FlowRenderer node={currentNode} onSelect={onSelectHandler} />
       <FlowControls
         onExitEmergency={exitEmergency}
         onNight={goNight}
