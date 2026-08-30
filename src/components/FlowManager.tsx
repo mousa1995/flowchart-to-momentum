@@ -48,6 +48,7 @@ function FlowManager() {
 
     //3. Node را روی start بگذارد
     setCurrentNodeId("start");
+    eventStore.current.removeLastEvent();
   };
 
   const exitEmergency = () => {
@@ -73,6 +74,7 @@ function FlowManager() {
     //.5activeFlow و currentNodeId را به مقادیر قبلی برگردانیم.
     setActiveFlow(lastFlow);
     setCurrentNodeId(lastNodeId);
+    eventStore.current.removeLastEvent();
   };
 
   const onSelectHandler = (e: string) => {

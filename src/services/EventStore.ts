@@ -14,4 +14,8 @@ export class EventStore {
   read() {
     return [...this.data];
   }
+
+  removeLastEvent() {
+    this.data.pop();
+  }
 }
