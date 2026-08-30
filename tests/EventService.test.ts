@@ -2,6 +2,7 @@ import { describe, it, expect, vi } from "vitest";
 import { EventService } from "../src/services/EventService";
 import { EventStore } from "../src/services/EventStore";
 import { createEvent } from "../src/utils/createEvent";
+import { Event } from "../src/types/Event";
 
 describe("EventService", () => {
   it("should check if an event is saved correctly", () => {
@@ -30,12 +31,25 @@ describe("EventService", () => {
     expect(eventStore.read()[0].timestamp).toBeTypeOf("number");
   });
 
-  it("should see if eventService calss saves records correctly", () => {
-    //Arrange
-    // const mockEventStore
-    // const eventService = new EventService(mockEventStore());
-    //Act
-    //Assert
-    // expect(eventService);
+  it("should call EventStore.save with the event", () => {
+    // Arrange
+    const eventStore = new EventStore();
+    const saveSpy = vi.spyOn(eventStore, "save");
+
+    const event: Event = {
+      eventId: "event_001",
+      type: "commander_exited",
+      timestamp: 1000,
+      flow: "morningRoutine",
+      taskId: "task_001",
+    };
+
+    const eventService = new EventService(eventStore);
+
+    // Act
+    eventService.recordEvent(event);
+
+    // Assert
+    expect(saveSpy).toHaveBeenCalledWith(event);
   });
 });
