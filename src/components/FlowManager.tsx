@@ -8,6 +8,7 @@ import { EventStore } from "../services/EventStore";
 import { EventService } from "../services/EventService";
 import { createEvent } from "../utils/createEvent";
 import { taskIDGenerator } from "../utils/taskIDGenerator";
+import { Clock } from "./Clock";
 
 function FlowManager() {
   const [activeFlow, setActiveFlow] = useState<FlowName>("morningRoutine");
@@ -93,6 +94,7 @@ function FlowManager() {
 
   return (
     <div>
+      <Clock />
       <FlowRenderer node={currentNode} onSelect={onSelectHandler} />
       <FlowControls
         onExitEmergency={exitEmergency}
